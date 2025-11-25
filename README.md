@@ -85,8 +85,9 @@ python app.py
 
 ## License
 
-[Add your license here]
+MIT
 
 ## Contributing
 
-[Add contribution guidelines here]
+SDM
+
