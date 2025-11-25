@@ -1,0 +1,27 @@
+# Ignore Python virtual environments
+venv/
+ai_env/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore .env files with API keys
+.env
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore logs
+*.log
+
+# Keep PDF inputs and outputs tracked
+# (optional: ignore large PDFs if needed)
+# data/pdfs/  # Uncomment to ignore PDFs
+# data/extracted/  # Keep this tracked
+# data/results/    # Keep this tracked
+
+
