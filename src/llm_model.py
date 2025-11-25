@@ -1,6 +1,8 @@
 import openai
 import os
 
+# using specific functtion to initialize OpenAI client, buid messages, and call the LLM
+
 def init_openai():
     # Explicitly tell the module which key to use
     openai.api_key = os.getenv("OPENAI_API_KEY")

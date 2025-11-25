@@ -25,3 +25,4 @@ __pycache__/
 # data/results/    # Keep this tracked
 
 
+*.code-workspace
