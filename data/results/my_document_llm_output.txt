@@ -1,21 +1,19 @@
-• Coverage Criteria
-  - Documented diagnosis of osteoporosis in a postmenopausal woman
-  - Documented T-score below -2.5 OR documentation that the patient is at high risk for bone fracture
-  - Documented failure to respond, intolerance, or contraindication to:
-    • Two oral bisphosphonates (alendronate, ibandronate); OR
-    • One oral bisphosphonate and IV zoledronic acid (Reclast); OR
-    • One oral bisphosphonate and denosumab (Prolia)
-  - Documented severe osteoporosis with continued fracture after one year of continuous bisphosphonate use
-  - Patients with severe osteoporosis (T-score ≤ -3 or several vertebral fractures) can bypass trial with bisphosphonates/Prolia
+Coverage Criteria
+[ ] Documented diagnosis of osteoporosis in a postmenopausal woman
+[ ] Documented T-score below -2.5 OR documentation that the patient is at high risk for bone fracture
+[ ] Documented failure to respond, intolerance, or contraindication to any of the following:
+    [ ] Two oral bisphosphonates (alendronate, ibandronate)
+    [ ] One oral bisphosphonate and IV zoledronic acid (Reclast)
+    [ ] One oral bisphosphonate and denosumab (Prolia)
+[ ] Documented severe osteoporosis with continued fracture after one year of continuous bisphosphonate use
+[ ] Patients with severe osteoporosis (T-score ≤ -3 or several vertebral fractures) can bypass trial with bisphosphonates/Prolia based on evidence supporting maximized bone density when receiving Evenity prior to bisphosphonates/Prolia
 
-• Exclusion Criteria
-  - Combination therapy involving the use of romosozumab concurrently with another bone mineral density modifying drug
-  - Treatment of osteopenia
-  - Previous treatment with Forteo or Tymlos
+Exclusion Criteria
+[ ] Combination therapy involving the use of romosozumab concurrently with another bone mineral density modifying drug
+[ ] Treatment of osteopenia
+[ ] Evenity will not be covered if the member has previously been treated with Forteo or Tymlos
 
-• Approval Period
-  - 12 months (lifetime)
+Approval Period
+[ ] 12 months (lifetime)
 
-• Additional Notes
-  - Evenity (romosozumab) is only covered under the medical specialty benefit per outlined criteria
-  - Lifetime maximum duration for approval is 12 months
+Additional Notes

@@ -16,24 +16,26 @@ def build_messages(pdf_text: str) -> list[dict]: # build messages for LLM
     pdf_text: the extracted text from the medical PDF
     """
     system_message = (
-        "You are a medical regulatory document analyst.\n"
-        "Your job is to read the provided medical PDF text and extract the approval requirements "
-        "for a medication. You must be precise, structured, and avoid hallucinations."
-        "Output should be in a clear bullet point format under specified headings."
-    )
+    "You are a medical regulatory document analyst. "
+    "Your goal is to extract approval requirements from medical PDF text. "
+    "Output must use checkbox formatting like '[ ] item', and no leading dashes. "
+    "Do not hallucinate. Keep the output clean and structured."
+)
 
     user_message = (
-        "Instructions:\n"
-        "- Read the following PDF content.\n"
-        "- Extract all approval requirements for the medication.\n"
-        "- Organize your output into bullet points under these headings:\n"
-        "  • Coverage Criteria\n"
-        "  • Exclusion Criteria\n"
-        "  • Approval Period\n"
-        "- Add any additional notes as bullet points.\n"
-        "- Do not include extra narrative; keep bullets clear and concise.\n\n"
-        f"PDF content:\n{pdf_text}"
-    )
+    "Read the PDF content below and extract all approval requirements.\n\n"
+    "FORMAT RULES:\n"
+    "- Use checkbox formatting ONLY: '[ ] Item description'\n"
+    "- NO leading dash\n"
+    "- Use the following exact section titles (no markdown symbols):\n"
+    "  Coverage Criteria\n"
+    "  Exclusion Criteria\n"
+    "  Approval Period\n"
+    "  Additional Notes\n"
+    "- Indent nested items with four spaces.\n"
+    "- Do not add commentary; list only facts found in the PDF.\n\n"
+    f"PDF CONTENT:\n{pdf_text}"
+)
     messages = [
         {"role": "system", "content": system_message},
         {"role": "user", "content": user_message},
