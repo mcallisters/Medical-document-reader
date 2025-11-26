@@ -42,10 +42,8 @@ cd Medical-document-reader
 
 ### 2. Create a virtual environment (recommended)
 
-# Create a new conda environment
 conda create -n medical_doc_env python=3.11 -y
 
-# Activate the environment
 conda activate medical_doc_env
 
 ### 3. Install dependencies
@@ -90,5 +88,6 @@ MIT
 ## Contributing
 
 SDM
+
 
 
