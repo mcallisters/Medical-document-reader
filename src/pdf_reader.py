@@ -1,9 +1,8 @@
+# import necessary modules
 import pdfplumber
 import os
 
-# -----------------------------
-# 1. Extract PDF text
-# -----------------------------
+# extract text from PDF
 def extract_pdf_text(pdf_path, start_page=0, end_page=None):
     texts = []
     with pdfplumber.open(pdf_path) as pdf:
@@ -18,9 +17,7 @@ def extract_pdf_text(pdf_path, start_page=0, end_page=None):
                 texts.append(f"[PAGE {i} – no selectable text, needs OCR]\n")
     return "\n\n".join(texts)
 
-# -----------------------------
-# 2. Save extracted text
-# -----------------------------
+# save extracted text as a string to a text file
 def save_extracted_text(text: str, filename: str):
     """
     Saves extracted PDF text to a file in data/extracted/.
@@ -31,6 +28,6 @@ def save_extracted_text(text: str, filename: str):
     
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(text)
-    
-    print(f"✅ Extracted text saved to: {file_path}")
+    # print confirmation
+    print(f"Extracted text saved to: {file_path}")
     return file_path
